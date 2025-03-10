@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Word Definition Extension",
+    "version": "1.0",
+    "description": "Shows the definition of a word when you hover over it.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
